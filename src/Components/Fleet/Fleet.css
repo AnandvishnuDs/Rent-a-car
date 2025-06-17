@@ -1,0 +1,127 @@
+.deals-main{
+  background-image: url(../../../public/Images/aboutus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropdown-btn {
+  background-color:#b1dae7;
+  color:black;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  z-index: 100;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+
+.card-main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 25px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.card:hover{
+  transform: translateY(-5px);
+  background-color: #b1dae7;
+}
+.card-img {
+  background:cadetblue;
+  height: 150px;
+  /* overflow: hidden; */
+ 
+}
+.card-img img{
+  width: 100%;
+  height: 100%;
+    object-fit: cover;
+     overflow: hidden;
+}
+
+.card-info {
+  padding: 16px;
+}
+
+.text-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.text-body {
+  font-size: 0.9rem;
+  color: #060606;
+}
+
+.card-footer {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-button button{
+  background-color: rgb(64, 63, 63);
+  color: rgb(255, 149, 0);
+  width: 75px;
+  height: 35px;
+  border-radius: 20px;
+}
+.card-button button:hover{
+  background-color:rgb(46, 45, 45);
+}
+.container-card h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: orange;
+}
+.container-card h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(244, 247, 247);
+  padding-bottom: 0px;
+
+}

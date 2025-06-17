@@ -1,0 +1,208 @@
+{
+  "section1": [
+    {
+      
+      "title": "Maruti Ertiga",
+      "description": "ombining adequate modern features with great value for money.",
+      "price": "2000/-perday",
+      "image": "data:image/jpeg;base64,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"
+    },
+    {
+      
+      "title": "Toyota Innova Hycross",
+      "description": "The Toyota Innova Hycross blends classic Innova DNA with modern SUV design",
+      "price": "3000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/innova-hycross-exterior-right-front-three-quarter-73.jpeg?isig=0&q=80"
+    },
+     {
+      
+      "title": "Kia Carens Clavis",
+      "description": "The Carens Clavis is an updated version of the Carens MPV sporting a new design",
+      "price": "2500/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/195199/clavis-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80"
+    },
+     {
+      
+      "title": "Renault Triber",
+      "description": "The Renault Triber is a compact MPV with a versatile, spacious cabin and good ride comfort.",
+      "price": "2000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/141119/triber-exterior-right-front-three-quarter-10.jpeg?isig=0&q=80"
+    },
+     {
+     
+      "title": "Maruthi XL6",
+      "description": "The price of Maruti XL6, a 6 seater MUV/MPV, ranges from Rs. 11.83 - 15.00 Lakh",
+      "price": "$2000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/115601/xl6-exterior-right-front-three-quarter-13.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Toyota Innova Crysta",
+      "description": "The Innova Crysta is a reliable and powerful multi-purpose vehicle with a strong chassis.",
+      "price": "2800/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.png?isig=0&q=80"
+    },
+    {
+      
+      "title": "Kia Carnival",
+      "description": "The Kia Carnival offers six and seven-seat options with large amounts of space and lots of drivers, comfort-oriented and smart user technology.",
+      "price": "2500/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/138947/carnival-exterior-right-front-three-quarter-19.jpeg?isig=0&q=80"
+    },
+     {
+      
+      "title": "BYD eMax 7",
+      "description": "The eMAX7, is a premium electric MPV renowned for its feature-rich cabin and offers a range of 530kms.",
+      "price": "3500/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/185983/emax-7-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
+    },
+     {
+      
+      "title": "Force Motors Trax Cruiser",
+      "description": "The Trax Cruiser remains among the top choice for those who need to ferry more passengers over long distances in adequate comfort.",
+      "price": "2500/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/135589/trax-cruiser-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80"
+    },
+     {
+      
+      "title": "Mahindra Marazzo",
+      "description": "Mahindra Marazzo price for the base model starts at Rs. 14.59 Lakh",
+      "price": "2200/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/49114/marazzo-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80"
+    }
+  ],
+  "section2": [
+    {
+      
+      "title": "Tata Altroz",
+      "description": "Tata's premium hatchback, recently upgraded in May 2025, highlights its value proposition. ",
+      "price": "2000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/199863/altroz-facelift-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Maruthi Swift",
+      "description": "The Swift is one of the oldest brand names, but it continues to be a modern hatchback.",
+      "price": "1600/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter-31.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Volkswagen Polo GT",
+      "description": "The Volkswagen Polo GT TSI has always been and still is an enthusiast’s car",
+      "price": "2000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/29628/polo-exterior-right-front-three-quarter-2.jpeg?q=80"
+    },
+    {
+      
+      "title": "Hyundai i20",
+      "description": "The i20 is a premium hatchback with an attractive design. It is loaded with many comfort and safety",
+      "price": "1900/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/150603/i20-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Toyota Glanza",
+      "description": "The Glanza is a practical and user-friendly hatchback, perfect for everyday driving",
+      "price": "1600/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/glanza-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Renault Kwid",
+      "description": "The Kwid is an entry-level car with SUV-inspired looks and ample ground clearance.",
+      "price": "1400/-",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/141125/kwid-exterior-right-front-three-quarter-37.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Tata Tiago",
+      "description": "The Tiago is Tata's compact hatchback with a nice design, reasonable space, and exciting features for an entry-level car.",
+      "price": "1500/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/39345/tiago-exterior-right-front-three-quarter-32.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Maruti Wagon R",
+      "description": "The Wagon R is a versatile hatchback, offering ample space and smart storage options thanks to its tall design.",
+      "price": "1400/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112947/wagon-r-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "MG Comet EV",
+      "description": "The MG Comet EV turns heads with its funky design and tackles city streets with ease, thanks to its absorbing ride quality",
+      "price": "1500/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/125193/comet-ev-exterior-right-front-three-quarter-29.jpeg?isig=0&q=80"
+    },
+    {
+      
+      "title": "Mruthi Alto K10",
+      "description": "The Alto K10 is an affordable entry-level car that offers adequate space, fit and finish and equipment for the price.",
+      "price": "1000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/127563/alto-k10-exterior-right-front-three-quarter-62.jpeg?isig=0&q=80"
+    }
+  ],
+  "section3": [
+    {
+      "title": "Maruti Dzire",
+      "description": "The new-gen Dzire has evolved into a modern design despite being a compact sedan",
+      "price": "1600/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170173/dzire-exterior-right-front-three-quarter-27.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Volkswagen Virtus",
+      "description": "The Volkswagen Virtus is a good-looking sedan with a robust build. It offers ample legroom and modern equipments",
+      "price": "2300/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/144681/virtus-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Hyundai Verna",
+      "description": "The Hyundai Verna has impressive modern styling, a long feature list with ADAS functions, and a five-star safety rating. ",
+      "price": "2200/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/121943/verna-exterior-right-front-three-quarter-102.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Hyundai Aura",
+      "description": "The Aura is a compact sedan featuring comfortable seats and an airy, well-finished cabin.",
+      "price": "1600/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139133/aura-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Skoda Slavia",
+      "description": "The Slavia is a good-looking sedan that offers a thrilling drive experience, whether in the city or on the highway.",
+      "price": "2300/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175951/slavia-exterior-right-front-three-quarter-9.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Honda City",
+      "description": "The City excels in space and comfort, is reasonably feature-packed, and gets ADAS too. It’s also impressive for its reliability.",
+      "price": "2200/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/city-exterior-right-front-three-quarter-78.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "BMW 3 Series LWB",
+      "description": "This new iteration of the luxury sedan, as the name suggests, comes with a longer wheelbase of 2,961mm, allowing it to offer the most spacious second row in the segment.",
+      "price": "11000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/198567/3-series-lwb-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Mercedes-Benz A-Class Limousine ",
+      "description": "A-Class Limousine has an NCAP rating of 5 stars and comes with 7 airbags. ",
+      "price": "7000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/149525/a-class-limousine-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80"
+    },
+    {
+      "title": "Audi A4",
+      "description": "Audi Drive Sure addresses these gaps through a dual curriculum for young drivers and chauffeurs.",
+      "price": "7000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/51909/a4-exterior-right-front-three-quarter-2.jpeg?q=80"
+    },
+    {
+      "title": "Volvo S90",
+      "description": "Volvo S90 is one of the most safest sedan cars in the world",
+      "price": "11000/-perday",
+      "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/131145/s90-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80"
+    }
+  ]
+}
