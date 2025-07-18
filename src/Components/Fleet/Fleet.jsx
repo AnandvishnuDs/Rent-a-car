@@ -1,41 +1,40 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Fleet.css";
-import { BsFilterLeft } from "react-icons/bs";
 
-const ProductCard = ({ title, description, price, image }) => (
-  <div className="card">
-    <div className="card-img">
-      <img src={image} alt={title} />
-    </div>
-    <div className="card-info">
-      <p className="text-title">{title}</p>
-      <p className="text-body">{description}</p>
-    </div>
-    <div className="card-footer">
-      <span className="text-title">{price}</span>
-      <div className="card-button">
-        <button>Book</button>
+// Card Component
+const ProductCard = ({ product, isBooked, onBook }) => {
+  const { title, description, price, image } = product;
+
+  return (
+    <div className="card">
+      <div className="card-img">
+        <img src={image} alt={title} />
+      </div>
+      <div className="card-info">
+        <p className="text-title">{title}</p>
+        <p className="text-body">{description}</p>
+      </div>
+      <div className="card-footer">
+        <span className="text-title">{price}</span>
+        <div className="card-button">
+          <button onClick={onBook}>
+            {isBooked ? "Booked" : "Book"}
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
+// Main Component
 const Fleet = () => {
-  const [open, setOpen] = useState(false);
   const [products, setProducts] = useState({});
-  // const menuRef = useRef(null);
+  const [bookedKeys, setBookedKeys] = useState(() => {
+    const stored = localStorage.getItem("bookedProducts");
+    return stored ? JSON.parse(stored) : [];
+  });
 
-
-  // useEffect(() => {
-  //   const handleClickOutside = (e) => {
-  //     if (menuRef.current && !menuRef.current.contains(e.target)) {
-  //       setOpen(false);
-  //     }
-  //   };
-  //   document.addEventListener("mousedown", handleClickOutside);
-  //   return () => document.removeEventListener("mousedown", handleClickOutside);
-  // }, []);
-
+  // Fetch JSON data
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -43,12 +42,29 @@ const Fleet = () => {
         const data = await response.json();
         setProducts(data);
       } catch (err) {
-        console.error("Error fetching products:", err);
+        console.error("Error loading data:", err);
       }
     };
-
     fetchData();
   }, []);
+  
+  const handleToggleBook = (sectionId, index, product) => {
+  const key = `${sectionId}_${index}`;
+  let updated;
+
+  if (bookedKeys.includes(key)) {
+    // Unbook logic
+    updated = bookedKeys.filter(k => k !== key);
+    localStorage.removeItem(`product_${key}`);
+  } else {
+    // Book logic
+    updated = [...bookedKeys, key];
+    localStorage.setItem(`product_${key}`, JSON.stringify(product));
+  }
+
+  setBookedKeys(updated);
+  localStorage.setItem("bookedProducts", JSON.stringify(updated));
+};
 
   const sections = [
     { id: "section1", title: "M P V / M U V Cars" },
@@ -58,36 +74,25 @@ const Fleet = () => {
 
   return (
     <div className="deals-main">
-      {/* <div className="dropdown" ref={menuRef}>
-        <button className="dropdown-btn" onClick={() => setOpen(!open)}>
-          <BsFilterLeft />
-        </button>
-        {open && (
-          <ul className="dropdown-menu">
-            {sections.map((section) => (
-              <li key={section.id}>
-                <a href={`#${section.id}`}>{section.title}</a>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div> */}
-
       <div className="container-card">
         <h1>Fleet</h1>
         {sections.map((section) => (
           <div key={section.id}>
             <h3 id={section.id}>{section.title}</h3>
             <div className="card-main">
-              {(products[section.id] || []).map((product) => (
-                <ProductCard
-                  key={product.id}
-                  title={product.title}
-                  description={product.description}
-                  price={product.price}
-                  image={product.image}
-                />
-              ))}
+              {(products[section.id] || []).map((product, index) => {
+                const key = `${section.id}_${index}`;
+                return (
+                  <ProductCard
+                    key={key}
+                    product={product}
+                    isBooked={bookedKeys.includes(key)}
+                    // onBook={() => handleBook(section.id, index, product)}
+                    onBook={() => handleToggleBook(section.id, index, product)}
+
+                  />
+                );
+              })}
             </div>
           </div>
         ))}
@@ -96,4 +101,4 @@ const Fleet = () => {
   );
 };
 
-export default Fleet;
+export default Fleet;

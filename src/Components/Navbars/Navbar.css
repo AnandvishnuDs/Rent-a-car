@@ -36,6 +36,9 @@
 }
 
 /* button */
+.switch{
+  display: flex;
+}
 .switch button{
   width: 150px;
   height: 40px;
@@ -49,6 +52,17 @@
   color: black;
   
 }
+.switch p{
+  color: orange;
+  padding-left: 16px;
+  font-size: 23px;
+}
+.carts a {
+  text-decoration: none;
+  color: orange;
+  font-size: 23px; 
+}
+
 /* Hamburger menu icon */
 .hamburger {
   display: none;

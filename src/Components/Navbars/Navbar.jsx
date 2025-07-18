@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { IoBookmarksOutline } from "react-icons/io5";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -25,6 +26,7 @@ const Navbar = () => {
 
       <label className="switch">
         <button type='login'><Link to={"/login"}className='login'>Login/Signup</Link></button>
+        <p className='carts'><Link to={"/cart"}><IoBookmarksOutline /></Link></p>
       </label>
     </nav>
   )

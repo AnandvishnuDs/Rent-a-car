@@ -11,6 +11,7 @@ import Deal from './Components/Deal/Deal';
 import Fleet from './Components/Fleet/Fleet';
 import { useEffect, useState } from 'react';
 import './App.css'; // Add spinner styles here
+import Cart from './Components/Cart/Cart';
 
 function App() {
   return (
@@ -89,7 +90,10 @@ function AppContent() {
         <Route path='/booking' element={<Booking />} />
         <Route path='/contact' element={<Contactus />} />
         <Route path='/deal' element={<Deal />} />
+        <Route path='/cart' element={<Cart />} />
       </Route>
+        
+
     </Routes>
   );
 }
