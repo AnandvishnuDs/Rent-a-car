@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <Link to="/"> <img src="../../../public/Images/logoes.png" alt="logo" className='logo' /></Link>
+      <Link to="/"> <img src="https://i.ibb.co/b5k4hNB6/logoes.png" alt="logo" className='logo' /></Link>
 
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

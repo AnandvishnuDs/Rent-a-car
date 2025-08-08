@@ -3,18 +3,33 @@ import '../Fleet/Fleet.css'
 const Cart = () => {
   const [bookedProducts, setBookedProducts] = useState([]);
 
-  // useEffect(() => {
-  //   loadBookedProducts();
-  // }, []);
-
   useEffect(() => {
-    const keys = JSON.parse(localStorage.getItem("bookedProducts")) || [];
-    const products = keys.map((key) => {
-      const item = localStorage.getItem(`product_${key}`);
-      return item ? JSON.parse(item) : null;
-    }).filter(Boolean); // remove nulls
-    setBookedProducts(products);
+    loadBookedProducts();
+
   }, []);
+   const loadBookedProducts = () => {
+    const keys = JSON.parse(localStorage.getItem("bookedProducts")) || [];
+    const products = keys
+      .map((key) => {
+        const item = localStorage.getItem(`product_${key}`);
+        return item ? { key, ...JSON.parse(item) } : null; //not Key store 
+      })
+      .filter(Boolean); // Null values remove 
+    setBookedProducts(products);
+  };
+
+    const handleUnbook = (key) => {
+    // BookedProducts array  key remove 
+    const existing = JSON.parse(localStorage.getItem("bookedProducts")) || [];
+    const updatedKeys = existing.filter((k) => k !== key);
+    localStorage.setItem("bookedProducts", JSON.stringify(updatedKeys));
+
+    // Specific product remove 
+    localStorage.removeItem(`product_${key}`);
+
+    // React state update 
+    setBookedProducts((prev) => prev.filter((p) => p.key !== key));
+  };
 
   return (
     <div className="deals-main">
@@ -36,7 +51,9 @@ const Cart = () => {
                 <div className="card-footer">
                   <span className="text-title">{product.price}</span>
                   <div className="card-button">
-                    <button disabled>Booked</button>
+                    <button onClick={() => handleUnbook(product.key)}>
+                      Unbook
+                    </button>
                   </div>
                 </div>
               </div>

@@ -186,14 +186,14 @@ const Home = () => {
             <div class="store-buttons">
               <a href="https://play.google.com/store/games?hl=en">
                 <img
-                  src="../../../public/Images/PlayStoreBadge.png"
+                  src="https://i.ibb.co/p637K92x/Play-Store-Badge.png"
                   alt=""
                   className="store-badge"
                 />
               </a>
               <a href="https://www.apple.com/in/app-store/">
                 <img
-                  src="../../../public/Images/AppStoreBadge.png"
+                  src="https://i.ibb.co/zhGhtW7j/App-Store-Badge.png"
                   alt=""
                   className="store-badge"
                 />
@@ -201,7 +201,7 @@ const Home = () => {
             </div>
           </div>
           <div class="referral-image">
-            <img src="../../../public/Images/referral img.jpg" alt="" />
+            <img src="https://i.ibb.co/LhYmZFTj/referral-img.jpg" alt="" />
           </div>
         </div>
       </div>
