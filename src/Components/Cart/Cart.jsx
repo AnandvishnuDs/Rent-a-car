@@ -3,6 +3,10 @@ import '../Fleet/Fleet.css'
 const Cart = () => {
   const [bookedProducts, setBookedProducts] = useState([]);
 
+  // useEffect(() => {
+  //   loadBookedProducts();
+  // }, []);
+
   useEffect(() => {
     const keys = JSON.parse(localStorage.getItem("bookedProducts")) || [];
     const products = keys.map((key) => {
